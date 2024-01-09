@@ -28,7 +28,7 @@ class Stack {
 
   empty() {
     // is the stack empty
-    return this.stack.legth === 0;
+    return this.stack.length === 0;
   }
 
   search(searchItem) {
@@ -56,6 +56,8 @@ console.log({ pop: stack });
 
 const peekStack = stack.peek();
 console.log({ peek: peekStack });
+
+console.log({ empty: stack.empty() });
 
 const searchItem = stack.search("d");
 console.log({ searchResult: searchItem });
