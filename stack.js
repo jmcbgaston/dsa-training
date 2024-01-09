@@ -30,8 +30,17 @@ class Stack {
     return this.stack.legth === 0;
   }
 
-  search() {
-    // search stack for an item
+  search(searchItem) {
+    // is the item in the stack?
+    let stackIndex = this.stack.length - 1;
+
+    while (stackIndex >= 0) {
+      if (this.stack[stackIndex] === searchItem) return true;
+      stackIndex--;
+    }
+
+    // if search fails, return falsey
+    return false;
   }
 }
 
@@ -46,5 +55,8 @@ console.log({ pop: stack });
 
 const peekStack = stack.peek();
 console.log({ peek: peekStack });
+
+const searchItem = stack.search("d");
+console.log({ searchResult: searchItem });
 
 // How to execute: `node stack.js`
