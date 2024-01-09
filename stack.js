@@ -1,3 +1,4 @@
+// LIFO Data Structure that stores data "vertically"
 class Stack {
   // can accept any number of args
   constructor(...elements) {
