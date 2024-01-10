@@ -1,8 +1,7 @@
-// LIFO Data Structure that stores data "vertically"
+// LIFO Data Structure
+// - Stores data "vertically"
 class Stack {
-  // can accept any number of args
   constructor(...elements) {
-    // instantiate stack as an array of the elements
     this.stack = [...elements];
   }
 
@@ -45,21 +44,23 @@ class Stack {
   }
 }
 
-let stack = new Stack("a", "b", "c");
+// Instantiation
+const stack = new Stack("a", "b", "c");
 console.log({ init: stack });
 
+// Push
 stack.push(1, 2, 3);
 console.log({ push: stack });
 
+// Pop
 stack.pop(1);
 console.log({ pop: stack });
 
-const peekStack = stack.peek();
-console.log({ peek: peekStack });
+// Peek
+console.log({ peek: stack.peek() });
 
+// Empty
 console.log({ empty: stack.empty() });
 
-const searchItem = stack.search("d");
-console.log({ searchResult: searchItem });
-
-// How to execute: `node stack.js`
+// Search
+console.log({ searchResult: stack.search("d") });
