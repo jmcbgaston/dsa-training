@@ -44,23 +44,23 @@ class Stack {
   }
 }
 
-// Instantiation
-const stack = new Stack("a", "b", "c");
-console.log({ init: stack });
+// // Instantiation
+// const stack = new Stack("a", "b", "c");
+// console.log({ init: stack });
 
-// Push
-stack.push(1, 2, 3);
-console.log({ push: stack });
+// // Push
+// stack.push(1, 2, 3);
+// console.log({ push: stack });
 
-// Pop
-stack.pop(1);
-console.log({ pop: stack });
+// // Pop
+// stack.pop(1);
+// console.log({ pop: stack });
 
-// Peek
-console.log({ peek: stack.peek() });
+// // Peek
+// console.log({ peek: stack.peek() });
 
-// Empty
-console.log({ empty: stack.empty() });
+// // Empty
+// console.log({ empty: stack.empty() });
 
-// Search
-console.log({ searchResult: stack.search("d") });
+// // Search
+// console.log({ searchResult: stack.search("d") });

@@ -1,6 +1,6 @@
 // FIFO Data Structure
 // - Holds elements prior to processing
-class Queue {
+export default class Queue {
   constructor(...items) {
     this.queue = [...items];
   }
@@ -44,26 +44,26 @@ class Queue {
   }
 }
 
-// Instantiation
-const queue = new Queue(1, 2, 3);
-console.log({ queue: queue });
+// // Instantiation
+// const queue = new Queue(1, 2, 3);
+// console.log({ queue: queue });
 
-// Enqueue
-queue.enqueue(4);
-console.log({ enqueue: queue });
+// // Enqueue
+// queue.enqueue(4);
+// console.log({ enqueue: queue });
 
-// Dequeue
-queue.dequeue(2);
-console.log({ dequeue: queue });
+// // Dequeue
+// queue.dequeue(2);
+// console.log({ dequeue: queue });
 
-// Peek
-console.log({ peek: queue.peek() });
+// // Peek
+// console.log({ peek: queue.peek() });
 
-// Empty
-console.log({ empty: queue.empty() });
+// // Empty
+// console.log({ empty: queue.empty() });
 
-// Size
-console.log({ size: queue.size() });
+// // Size
+// console.log({ size: queue.size() });
 
-// Contains
-console.log({ contains: queue.contains(5) });
+// // Contains
+// console.log({ contains: queue.contains(5) });
